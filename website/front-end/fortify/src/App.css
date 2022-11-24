@@ -5,3 +5,22 @@ body, html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+.NBtn{
+    margin-left: 10px;
+    background-color: #1dc71d;
+    color: white !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 6px ;
+    border-radius: 12px ;
+    cursor: pointer;
+    border: none;
+
+}
+.NBtn:hover{
+  background-color: aliceblue;
+  color: #1dc71d !important;
+  text-decoration: underline;
+}
