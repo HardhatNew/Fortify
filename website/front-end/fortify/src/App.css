@@ -24,3 +24,14 @@ body, html {
   color: #1dc71d !important;
   text-decoration: underline;
 }
+.carousel {
+  margin: 10px auto 10%;
+  justify-content: center;
+  align-items: center;
+ 
+ padding: 10px 50px;
+ height: 600px;
+}
+.carousel img{
+  height: 600px;
+}
