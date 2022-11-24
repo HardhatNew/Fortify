@@ -8,4 +8,4 @@ The Hardhat Enterprises Fortify project is a website platform that connects secu
 
 ## Setup Flask for the Trimester
 
-You can use the following file to set-up your Flask environment to start development. [Here](Flask-Setup.md)
+You can use the following file to set-up your Flask environment to start development. [Here](Flask-setup.md)
