@@ -1,4 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel'
+import Subscribe from './Subscribe'
 
 const HPCarousels = () => {
   return (
@@ -43,6 +44,7 @@ const HPCarousels = () => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+        <Subscribe />
       </div>
     </>
   )
