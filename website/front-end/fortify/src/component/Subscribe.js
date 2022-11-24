@@ -10,7 +10,7 @@ const Subscribe = () => {
         placeholder="Enter your work email"
       />
 
-      <Button variant="success" type="submit">
+      <Button className="btn" variant="success" type="submit">
         Get in touch with us
       </Button>
     </Form>

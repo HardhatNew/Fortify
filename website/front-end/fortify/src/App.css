@@ -49,3 +49,41 @@ body, html {
   margin-right: 60px;
   padding: 5px;
 }
+.ESub .btn {
+  width:300px
+}
+.security_experts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px auto 10px;
+  
+}
+.security_experts p {
+  padding-top: 20px;
+}
+.security_Img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.security_Img > img{
+  width: 100px;
+  margin: 5px 40px;
+}
+img.facebook {
+  width: 150px;
+}
+.security_video{
+ 
+  padding: 0 200px;
+  margin: 0 10px 10px;
+  
+}
+.security_video iframe {
+  border-radius: 20px;
+
+  
+}
