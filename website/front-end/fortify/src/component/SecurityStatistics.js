@@ -1,5 +1,5 @@
 import SpanDot from './SpanDot'
-
+import { BsArrowRightCircle } from 'react-icons/bs'
 const SecurityStatistics = () => {
   return (
     <div className="secStatistic">
@@ -19,7 +19,9 @@ const SecurityStatistics = () => {
         <div className="damageCost">
           <div className="damTitle">
             <p>Total Damage Cost </p>
-            <a href="/#">View Article</a>
+            <a href="/#">
+              View Article <BsArrowRightCircle />
+            </a>
           </div>
 
           <div className="damBody">
@@ -30,7 +32,9 @@ const SecurityStatistics = () => {
         <div className="ransomware">
           <div className="damTitle">
             <p>Ransomware Attacks </p>
-            <a href="/#">View Article</a>
+            <a href="/#">
+              View Article <BsArrowRightCircle />
+            </a>
           </div>
 
           <div className="damBody">
@@ -44,12 +48,16 @@ const SecurityStatistics = () => {
         <div className="targetedBuss">
           <div className="damTitle">
             <p>Targeted Businesses </p>
-            <a href="/#">View Article</a>
+            <a href="/#">
+              View Article <BsArrowRightCircle />
+            </a>
           </div>
 
           <div className="damBody">
-            <h5>43% of cyber attacks target small businesses </h5>
-            <p> &nbsp;- Cyberint</p>
+            <h5 className="SB">
+              43% of cyber attacks target small businesses{' '}
+            </h5>
+            <p> - Cyberint</p>
           </div>
         </div>
       </div>

@@ -88,7 +88,7 @@ img.facebook {
 .secStatistic {
   background-color: hsl(195, 15%, 95%);
   width: 80%;
-  height: 700px;
+  height: 600px;
  
   margin: 0px auto 10px;
   border-top-right-radius: 200px;
@@ -144,7 +144,7 @@ img.facebook {
   justify-content: end;
   align-items: end;
   margin-top: 30px;
-  padding-bottom: 100px;
+  
 }
 .damageCost ,.ransomware ,.targetedBuss{
 margin-top: 30px;
@@ -168,7 +168,7 @@ margin-left: 50px;
 
 }
 .targetedBuss{
-
+width: 30%;
   margin-left: 5rem;
   margin-right: 10rem;
 }
@@ -178,6 +178,7 @@ margin-left: 50px;
 }
 .damTitle p {
   margin-top: 10px;
+  margin-bottom: 0px;
   font-size: 12px;
   font-weight: bold;
 }
@@ -190,5 +191,28 @@ margin-left: 50px;
   margin-right: 20px;
 }
 .damBody{
+margin: 0px;
   display: flex;
+
+  align-items:center;
+}
+.damBody h5{
+  
+ 
+  font-size: 14px;
+  padding: 0;
+  margin-right: 0px;
+ 
+ 
+}
+.damBody p {
+  font-size: 9px;
+  margin-top: 10px;
+  
+  margin-right: 10px;
+  color: gray;
+  width: max-content;
+}
+.damBody > h5.SB{
+  width: 160px;
 }
