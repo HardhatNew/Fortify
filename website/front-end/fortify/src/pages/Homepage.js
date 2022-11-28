@@ -1,7 +1,8 @@
-import HPCarousels from '../component/HPCarousels'
-import SecurityE from '../component/SecurityE'
-import SecurityStatistics from '../component/SecurityStatistics'
-import SecurityVideo from '../component/SecurityVideo'
+import GetHelp from '../component/homepage/GetHelp'
+import HPCarousels from '../component/homepage/HPCarousels'
+import SecurityE from '../component/homepage/SecurityE'
+import SecurityStatistics from '../component/homepage/SecurityStatistics'
+import SecurityVideo from '../component/homepage/SecurityVideo'
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
       <SecurityE />
       <SecurityVideo />
       <SecurityStatistics />
+      <GetHelp />
     </>
   )
 }
