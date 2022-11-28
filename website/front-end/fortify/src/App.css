@@ -133,8 +133,16 @@ img.facebook {
 .squareBlue > span.dot{
   background-color: rgb(187, 117, 228); 
 }
+.squareBlue:hover > span.dot{
+  background-color: rgb(117, 228, 135); 
+}
 .squareGreen > span.dot{
   background-color: rgb(117, 228, 135);
+
+  
+}
+.squareGreen:hover > span.dot{
+  background-color: rgb(187, 117, 228);
 
   
 }
@@ -161,6 +169,10 @@ margin-left: 100px;
 }
 .squareGreen{
   margin-left: 100px;
+}
+.targetedBuss:hover, .damageCost:hover ,.ransomware:hover{
+  
+  box-shadow: 5px 5px 5px rgb(209, 230, 210); 
 }
 .ransomware {
 margin-right: 60px;
