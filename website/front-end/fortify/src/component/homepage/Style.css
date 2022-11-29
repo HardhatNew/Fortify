@@ -221,7 +221,7 @@ margin: 0px;
 .damBody > h5.SB{
   width: 160px;
 }
-/* Get help from certified cyber security experts section */
+/* Start Get help from certified cyber security experts section */
 .freeHelp{
   width: 80%;
   height: 600px;
@@ -230,3 +230,29 @@ margin: 0px;
   background-color: rgb(3, 8, 48);
   color: white;
 }
+/* End help security section */
+/* *************************************************************** */
+/* Start Volunteer Section */
+.volunteerSection > h1{
+  color: #23c71d;
+}
+/* End Volunteer Section  */
+/* ************************************************************* */
+/* Start Volunteer Section */
+.volunteerSection > h1{
+  color: #23c71d;
+}
+/* End Volunteer Section  */
+/* ************************************************************** */
+/* Start contact Section */
+.contact > h1{
+  color: #c78b1d;
+}
+/* End contact Section  */
+/* **************************************************************** */
+/* Start footer Section */
+.footer > h1{
+  color: #421dc7;
+}
+/* End footer Section  */
+/* **************************************************************** */

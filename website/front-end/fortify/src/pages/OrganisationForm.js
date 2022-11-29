@@ -9,6 +9,6 @@ what supposed to do
 import '../component/Organisation/style.css'
 
 const OrganisationForm = () => {
-  return <p>Organization Form</p>
+  return <p className="Organization">Organization Form</p>
 }
 export default OrganisationForm

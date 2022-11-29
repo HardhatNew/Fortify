@@ -12,9 +12,9 @@ function App() {
       <header className="App-header">
         <NavBar />
       </header>
-      <OrganisationForm />
+      {/* <OrganisationForm /> */}
       {/* <SignUpPage /> */}
-      {/* <Homepage /> */}
+      <Homepage />
     </div>
   )
 }
