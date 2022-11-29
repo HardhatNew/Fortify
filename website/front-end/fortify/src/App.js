@@ -4,6 +4,7 @@ import NavBar from './NavBar'
 import Homepage from './pages/Homepage'
 
 import React from 'react'
+import OrganisationForm from './pages/OrganisationForm'
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <header className="App-header">
         <NavBar />
       </header>
+      <OrganisationForm />
       {/* <SignUpPage /> */}
-      <Homepage />
+      {/* <Homepage /> */}
     </div>
   )
 }
