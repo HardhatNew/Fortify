@@ -224,14 +224,81 @@ margin: 0px;
 /* Start Get help from certified cyber security experts section */
 .freeHelp{
   width: 80%;
-  height: 600px;
+  /* height: 600px; */
+  padding: 3rem 1.5rem;
  
   margin: 0px auto 10px;
-  background-color: rgb(3, 8, 48);
+  background-color: #2A3342;
   color: white;
 }
+.freeHelp .title {
+  display: inline-block;
+  background-color: #DCFCE7;
+  color: #14532D;
+  font-size: 14px;
+  padding: 0.2rem 1.5rem;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.freeHelp .help-text {
+  color: #8896AB;
+  line-height: 1.8;
+}
+.helpBody {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.helpBody .helpImage {
+  position: relative;
+}
+.helpBody .helpImage img {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  z-index: 100;
+}
+.helpBody .helpImage img.circle {
+  position: absolute;
+  left: -20px;
+  top: -40px;
+  width: 80px;
+}
+.helpBody .helpImage img.triangle {
+  position: absolute;
+  right: -20px;
+  bottom: -40px;
+  width: 80px;
+  z-index: 99;
+}
+.helpBody .helpService {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.helpBody .helpService div {
+  display: flex;
+}
+.helpBody .helpService ul {
+  list-style-type: none;
+}
+.helpBody .helpService ul > li:first-child {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.helpBody .helpService ul > li:last-child {
+  color: #8896AB;
+  line-height: 1.8;
+  margin-top: 0.5rem;
+}
 /* End help security section */
-/* *************************************************************** */
+/* ****
+
+*********************************************************** */
 /* Start Volunteer Section */
 .volunteerSection > h1{
   color: #23c71d;
@@ -265,3 +332,10 @@ margin: 0px;
 
 /* End footer Section  */
 /* **************************************************************** */
+
+@media (min-width: 1024px) {
+  .helpBody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
