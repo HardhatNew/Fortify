@@ -7,7 +7,7 @@ const NavBar = () => {
     <>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img
               alt=""
               src="logo.svg"
@@ -19,10 +19,10 @@ const NavBar = () => {
           </Navbar.Brand>
 
           <Nav className="justify-content-center ">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Organizations</Nav.Link>
-            <Nav.Link href="#link">Volunteer</Nav.Link>
-            <Nav.Link href="#link">Search</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/organization">Organizations</Nav.Link>
+            <Nav.Link href="/volunteer">Volunteer</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
           </Nav>
           <Nav className="SLNav">
             <Nav.Link href="#link">Login</Nav.Link>
