@@ -8,10 +8,6 @@ what supposed to do
 */
 
 const Volunteer = () => {
-  return (
-    <div className="volunteerSection">
-      <h1>Volunteer code goes here</h1>
-    </div>
-  )
+  return <div className="volunteerSection"></div>
 }
 export default Volunteer

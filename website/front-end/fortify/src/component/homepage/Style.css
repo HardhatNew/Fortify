@@ -224,10 +224,10 @@ margin: 0px;
 /* Start Get help from certified cyber security experts section */
 .freeHelp{
   width: 80%;
-  /* height: 600px; */
+  
   padding: 3rem 1.5rem;
  
-  margin: 0px auto 10px;
+  margin: 0px auto;
   background-color: #2A3342;
   color: white;
 }
@@ -267,7 +267,7 @@ margin: 0px;
   top: -40px;
   width: 80px;
 }
-.helpBody .helpImage img.triangle {
+.helpBody .helpImage >  img.triangle {
   position: absolute;
   right: -20px;
   bottom: -40px;
@@ -295,6 +295,12 @@ margin: 0px;
   line-height: 1.8;
   margin-top: 0.5rem;
 }
+@media (min-width: 1024px) {
+  .helpBody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* End help security section */
 /* ****
 
@@ -306,14 +312,7 @@ margin: 0px;
 
 /* End Volunteer Section  */
 
-/* ************************************************************* */
-/* Start Volunteer Section */
 
-.volunteerSection > h1{
-  color: #23c71d;
-}
-
-/* End Volunteer Section  */
 /* ************************************************************** */
 /* Start contact Section */
 
@@ -325,16 +324,45 @@ margin: 0px;
 /* **************************************************************** */
 /* Start footer Section */
 
-.footer > h1{
-  color: #421dc7;
+.footer {
+  width: 80%;
+ height: 200px;
+background-color: #2A3342;
+  margin: 0px auto ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   color: white;
 }
+.footer_logo, .footer_body{
+  display: flex;
+  
+  }
+
+  .footer_logo > img.footer_img {
+    width: 50px;
+    height: 30px;
+    
+    padding-right: 10px;
+  }
+  .footer_body a {
+    font-size: 12px;
+   margin: 20px 3rem;
+   padding: 5px auto;
+   color: rgba(173, 180, 196, 0.658);
+  text-decoration: none;
+  }
+  .footer_body a:hover {
+color: #226422;
+font-weight:bolder;
+  }
+  .footer_footer {
+    color: rgba(255, 255, 255, 0.658);
+    font-size: 10px;
+  }
+
 
 /* End footer Section  */
 /* **************************************************************** */
 
-@media (min-width: 1024px) {
-  .helpBody {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}

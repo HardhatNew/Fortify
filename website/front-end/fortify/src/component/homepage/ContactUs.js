@@ -8,10 +8,6 @@ what supposed to do
 */
 
 const ContactUs = () => {
-  return (
-    <div className="contactUs">
-      <h1>Contact us code goes here</h1>
-    </div>
-  )
+  return <div className="contactUs"></div>
 }
 export default ContactUs
