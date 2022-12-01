@@ -7,7 +7,7 @@ import Homepage from './pages/Homepage'
 import NotFoundPage from './pages/NotFoundPage'
 import React from 'react'
 import OrganisationForm from './pages/OrganisationForm'
-import Volunteer from './component/homepage/Volunteer'
+import Volunteers from './pages/VolunteersPage'
 import AboutPage from './pages/AboutPage'
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/about" element={<AboutPage />} />
             <Route path="/" element={<Homepage />} />
-            <Route path="/volunteer" element={<Volunteer />} />
+            <Route path="/volunteer" element={<Volunteers />} />
             <Route path="/organization" element={<OrganisationForm />} />
             <Route path="/*" element={<NotFoundPage />} />
           </Routes>
