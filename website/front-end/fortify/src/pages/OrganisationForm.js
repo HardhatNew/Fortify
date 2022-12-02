@@ -8,6 +8,9 @@ what supposed to do
 */
 import React from 'react'
 import '../component/Organisation/style.css'
+import Envelope from '../images/envelope-fill.svg'
+import Phone from '../images/phone-fill.svg'
+import Telephone from '../images/telephone.png'
 
 const OrganisationForm = () => {
   return (
@@ -28,9 +31,19 @@ const OrganisationForm = () => {
 
   <div className='center2'>
   <div className='Card2'>
-  <div className='upperContainer2'>
-    <h3> Contacts </h3>
+  <div className='upperContainer2 '>
+  <img src={Telephone} alt="Telephone" />
+  <h3 className='inlineposition'> Contacts</h3>
+    <div className='lowerContainer'>
+    <br />
+    <img src={Envelope} alt='Envelope'/>
+    <h3 className='inlineposition smalltext'>coles@gmail.com</h3>
+    <br />
+    <br />
+    <img src={Phone} alt='telephone'/>
+    <h3 className='inlineposition smalltext'>0412402016</h3>
     </div>
+  </div>
   </div>
   </div>
 
