@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .Card {
     width: 300px;
     height: 230px;
@@ -58,4 +59,8 @@
 
 .lowerContainer h4 {
     color: green;
+=======
+p.organization{
+    color: rgb(92, 87, 87);
+>>>>>>> 86490825d0c704475d748962ce056788b6847a1e
 }

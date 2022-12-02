@@ -2,7 +2,10 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import logo from './images/logo.png'
+import React from 'react'
+import SignUpPage from './component/navbar/SignUp'
 const NavBar = () => {
+  const [modalShow, setModalShow] = React.useState(false)
   return (
     <>
       <Navbar bg="light" expand="lg">
@@ -27,12 +30,17 @@ const NavBar = () => {
           <Nav className="SLNav">
             <Nav.Link href="#link">Login</Nav.Link>
 
-            <Nav.Link className="NBtn" href="#link">
+            <Nav.Link
+              onClick={() => setModalShow(true)}
+              className="NBtn"
+              href="#link"
+            >
               Sign Up
             </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
+      <SignUpPage show={modalShow} onHide={() => setModalShow(false)} />
     </>
   )
 }
