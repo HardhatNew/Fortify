@@ -16,6 +16,9 @@ import SmileyFace from '../images/emoji-smile.png'
 const OrganisationForm = () => {
   return (
   <>
+  <div className='incompleteprofile'>
+  <h2>Your profile won't be visible to volunteers until it is completed!</h2>
+  </div>
   <div className='row'>
     <div className='column'>
   <table>
@@ -69,7 +72,7 @@ const OrganisationForm = () => {
   <h3 className='inlineposition'> About Us</h3>
     <div className='lowerContainer'>
     <br />
-    <h3 className='inlineposition smalltext'>Coles is a leading Australian retailer, with over 2,500 retail outlets nationally. Coles makes life easier for Australians by delivering quality, value and service. We process more than 20 million customer transactions each week, providing our customers with products from thousands of farmers and suppliers. </h3>
+    <h3 className='aboutus'>Coles is a leading Australian retailer, with over 2,500 retail outlets nationally. Coles makes life easier for Australians by delivering quality, value and service. We process more than 20 million customer transactions each week, providing our customers with products from thousands of farmers and suppliers. </h3>
     <br />
     <br />
     </div>
@@ -80,6 +83,32 @@ const OrganisationForm = () => {
   </tr>
   </table>
   </div>
+
+  <div className='column'>
+<table>
+  <tr>
+    <td>
+  <div className='Card4'>
+  <div className='upperContainer3 '>
+  <img src={SmileyFace} alt="SmileyFace" />
+  <h3 className='inlineposition'> Assessment Summary</h3>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <h3 className='incompleteprofilesmall'>To be completed</h3>
+  </div>
+  </div>
+  </td>
+  </tr>
+  </table>
+  </div>
+
+
   </div>
   </>
   )
