@@ -1,4 +1,6 @@
+import Introduction from "../component/aboutus/Introduction"
+
 const AboutPage = () => {
-  return <h1>this is the About Page</h1>
+  return <Introduction/>
 }
 export default AboutPage
