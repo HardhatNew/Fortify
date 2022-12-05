@@ -370,10 +370,146 @@ margin: 0px;
 /* ************************************************************** */
 /* Start contact Section */
 
+
+
 .contact > h1{
   color: #c78b1d;
 }
-
+.contactUs{
+  height: 450px;
+  width: auto;
+  text-align: center;
+  /* background-color: #421dc7; */
+  }
+  .contactB{
+    height: 60px;
+    width: 201px;
+    color: #73b709;
+    border-radius: 77px;
+    margin-left: 643px;
+    font-size: 40px;
+    /* text-align: center; */
+    background-color: #2fc57f40;
+  }
+  .sty{
+  font-size: 56px;
+  font-weight: bold;
+  margin-left: -70px;
+  
+  }
+  .styT{
+  font-size: 20px;
+  
+  margin-left: -70px;
+  }
+  #email{
+  margin-left: 371px;
+    width: 200px;
+    margin-top: 38px;
+  }
+  .emailIcon{
+  background-color: #0dd10d9c;
+    width: 55px;
+    height: 39px;
+    text-align: center;
+    border-radius: 27px;
+    margin-left: 70px;
+  }
+  .EmailID{
+  font-size: 17px;
+    margin-top: 12px;
+    color: #786c6c;
+  }
+  #phone{
+  width: 350px;
+  margin-left: 603px;
+  margin-top: -142px;
+  }
+  .phoneIcon{
+  background-color: #0dd10d9c;
+    width: 55px;
+    height: 39px;
+    text-align: center;
+    border-radius: 27px;
+    margin-left: 139px;
+  }
+  .phoneNumber{
+  font-size: 17px;
+    margin-top: 12px;
+    color: #786c6c;
+  }
+  #social{
+  width: 162px;
+    margin-left: 993px;
+    margin-top: -134px;
+  }
+  .socialIcon{
+  background-color: #0dd10d9c;
+    width: 55px;
+    height: 39px;
+    text-align: center;
+    border-radius: 27px;
+    margin-left: 54px;
+  }
+  .socialIcons{
+  FONT-SIZE: 22PX;
+  COLOR: GREEN;
+  margin-top: 6px;
+  margin-left: 53px;
+  }
+  .first{
+  margin-left: -60px;
+  }
+  .second{
+  margin-right: 30px;
+    margin-left: 33px;
+  }
+  
+  .third{
+      margin-right: 31px;
+  }
+  
+  .c{
+  display: inline;
+    float: left;
+  }
+  .form{
+  height: 406px;
+    width: 938px;
+    /* background-color: #23c71d; */
+    margin-left: 339px;
+    text-align: left;
+    position: inherit;
+    background-color: white; 
+    margin-top: 95px;
+    padding: 14px;
+    padding-top: 4px;
+    box-shadow: 0px 0px 3px 0px;
+  }
+  .emailInput{
+     height: 44px;
+     width: 100%;
+    /* border: -65px; */
+    border-radius: 12px;
+    background-color:  white;
+  }
+  .contactFormName{
+  font-size: 23px;
+  }
+  .message{
+  height: 153px;
+  width: 100%;
+  border-radius: 11px;
+  background-color:  white;
+  }
+  .submitBUtton{
+  height: 49px;
+    width: 100%;
+    background-color: #0dd10d9c;
+    margin-top: 12px;
+    border-radius: 10px;
+  }
+ 
 /* End contact Section  */
 /* **************************************************************** */
 /* Start footer Section */
