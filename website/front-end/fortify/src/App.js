@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import NotFoundPage from './pages/NotFoundPage'
 import React from 'react'
-import OrganisationForm from './pages/OrganisationForm'
+import OrganisationProfile from './pages/OrganisationProfile'
 import Volunteers from './pages/VolunteersPage'
 import AboutPage from './pages/AboutPage'
 
@@ -22,7 +22,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/" element={<Homepage />} />
             <Route path="/volunteer" element={<Volunteers />} />
-            <Route path="/organization" element={<OrganisationForm />} />
+            <Route path="/organization" element={<OrganisationProfile />} />
             <Route path="/*" element={<NotFoundPage />} />
           </Routes>
         </div>
