@@ -23,7 +23,7 @@ const NavBar = () => {
 
           <Nav className="justify-content-center ">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/organization">Organizations</Nav.Link>
+            <Nav.Link href="/organizations">Organizations</Nav.Link>
             <Nav.Link href="/volunteer">Volunteer</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
           </Nav>

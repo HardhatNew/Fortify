@@ -9,6 +9,7 @@ import React from 'react'
 import OrganisationProfile from './pages/OrganisationProfile'
 import Volunteers from './pages/VolunteersPage'
 import AboutPage from './pages/AboutPage'
+import OrganisationsPage from './pages/OrganisationsPage'
 
 function App() {
   return (
@@ -22,7 +23,11 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/" element={<Homepage />} />
             <Route path="/volunteer" element={<Volunteers />} />
-            <Route path="/organization" element={<OrganisationProfile />} />
+            <Route path="/organizations" element={<OrganisationsPage />} />
+            <Route
+              path="/organizations/:organizationId"
+              element={<OrganisationProfile />}
+            />
             <Route path="/*" element={<NotFoundPage />} />
           </Routes>
         </div>
