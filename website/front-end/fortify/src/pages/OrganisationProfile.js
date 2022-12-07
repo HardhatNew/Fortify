@@ -12,15 +12,19 @@ import Envelope from '../images/envelope-fill.svg'
 import Phone from '../images/phone-fill.svg'
 import Telephone from '../images/telephone.png'
 import SmileyFace from '../images/emoji-smile.png'
+// import useParams to fetch the data from the url
+import { useParams } from 'react-router'
+import organizations from '../component/Organisation/data/organisationInfo'
+//import star component
+import StarRating from '../component/Organisation/StarRating'
+const OrganisationProfile = () => {
+  const { organizationId } = useParams()
+  const organization = organizations.find(
+    (organization) => organization.name === organizationId,
+  )
 
-const OrganisationForm = () => {
   return (
     <>
-      <div className="incompleteprofile">
-        <h2>
-          Your profile won't be visible to volunteers until it is completed!
-        </h2>
-      </div>
       <div className="row">
         <div className="column">
           <table>
@@ -30,7 +34,7 @@ const OrganisationForm = () => {
                   <div className="upperContainer">
                     <div className="imageContainer">
                       <img
-                        src={require('../component/Organisation/data/images/coles.png')}
+                        src={require(`../component/Organisation/data/images/${organization.imageURL}`)}
                         alt=""
                         height="150px"
                         width="300px"
@@ -38,8 +42,8 @@ const OrganisationForm = () => {
                     </div>
                   </div>
                   <div className="lowerContainer">
-                    <h3> Coles </h3>
-                    <h4> Victoria 3149 </h4>
+                    <h3> {organization.name} </h3>
+                    <h4> {organization.address} </h4>
                   </div>
                 </div>
               </td>
@@ -55,12 +59,14 @@ const OrganisationForm = () => {
                       <br />
                       <img src={Envelope} alt="Envelope" />
                       <h3 className="inlineposition smalltext">
-                        coles@gmail.com
+                        {organization.contacts.email}
                       </h3>
                       <br />
                       <br />
                       <img src={Phone} alt="telephone" />
-                      <h3 className="inlineposition smalltext">0412402016</h3>
+                      <h3 className="inlineposition smalltext">
+                        {organization.contacts.phoneNumber}
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -80,14 +86,7 @@ const OrganisationForm = () => {
                       <h3 className="inlineposition"> About Us</h3>
                       <div className="lowerContainer">
                         <br />
-                        <h3 className="aboutus">
-                          Coles is a leading Australian retailer, with over
-                          2,500 retail outlets nationally. Coles makes life
-                          easier for Australians by delivering quality, value
-                          and service. We process more than 20 million customer
-                          transactions each week, providing our customers with
-                          products from thousands of farmers and suppliers.{' '}
-                        </h3>
+                        <h3 className="aboutus">{organization.aboutUs}</h3>
                         <br />
                         <br />
                       </div>
@@ -107,15 +106,69 @@ const OrganisationForm = () => {
                   <div className="upperContainer3 ">
                     <img src={SmileyFace} alt="SmileyFace" />
                     <h3 className="inlineposition"> Assessment Summary</h3>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <h3 className="incompleteprofilesmall">To be completed</h3>
+
+                    <div className="TCDesc">
+                      <p>Application Control</p>
+                      <StarRating
+                        ratingValue={
+                          organization.assessmentSummary.applicationControl
+                        }
+                        status="disabled"
+                      />
+                    </div>
+                    <div className="TCDesc">
+                      <p>Patch applications</p>
+                      <StarRating
+                        ratingValue={
+                          organization.assessmentSummary.pathApplications
+                        }
+                        status="disabled"
+                      />
+                    </div>
+                    <div className="TCDesc">
+                      <p>Configure Microsoft office</p>
+                      <StarRating
+                        ratingValue={
+                          organization.assessmentSummary.configureM365
+                        }
+                        status="disabled"
+                      />
+                    </div>
+                    <div className="TCDesc">
+                      <p>Use Web Application</p>
+                      <StarRating
+                        ratingValue={
+                          organization.assessmentSummary.UWAHardening
+                        }
+                        status="disabled"
+                      />
+                    </div>
+                    <div className="TCDesc">
+                      <p>Restrict Administrative</p>
+                      <StarRating
+                        ratingValue={
+                          organization.assessmentSummary.RAPrivileges
+                        }
+                        status="disabled"
+                      />
+                    </div>
+                    <div className="TCDesc">
+                      <p>Patch Operating System</p>
+                      <StarRating
+                        ratingValue={organization.assessmentSummary.PatchOS}
+                        status="disabled"
+                      />
+                    </div>
+                    <div className="TCDesc">
+                      <p>Multi-factor Authentication</p>
+                      <StarRating
+                        ratingValue={
+                          organization.assessmentSummary.multiFactorAuth
+                        }
+                        status="disabled"
+                      />
+                    </div>
+                    <div className="TCDesc"></div>
                   </div>
                 </div>
               </td>
@@ -126,4 +179,4 @@ const OrganisationForm = () => {
     </>
   )
 }
-export default OrganisationForm
+export default OrganisationProfile

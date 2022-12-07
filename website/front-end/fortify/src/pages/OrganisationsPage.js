@@ -41,45 +41,13 @@ const OrganisationsPage = () => {
                   status="disabled"
                 />
               </div>
-              <div className="TCDesc">
-                <p>Use Web Application</p>
-                <StarRating
-                  ratingValue={organization.assessmentSummary.UWAHardening}
-                  status="disabled"
-                />
-              </div>
-              <div className="TCDesc">
-                <p>Restrict Administrative</p>
-                <StarRating
-                  ratingValue={organization.assessmentSummary.RAPrivileges}
-                  status="disabled"
-                />
-              </div>
-              <div className="TCDesc">
-                <p>Patch Operating System</p>
-                <StarRating
-                  ratingValue={organization.assessmentSummary.PatchOS}
-                  status="disabled"
-                />
-              </div>
-              <div className="TCDesc">
-                <p>Multi-factor Authentication</p>
-                <StarRating
-                  ratingValue={organization.assessmentSummary.multiFactorAuth}
-                  status="disabled"
-                />
-              </div>
-              <div className="TCDesc">
-                <p>Regular Backups</p>
-                <StarRating
-                  ratingValue={organization.assessmentSummary.backups}
-                  status="disabled"
-                />
-              </div>
             </Card.Body>
 
             <Card.Footer className="text-muted">
-              <a href="#/" className="btn btn-light">
+              <a
+                href={`/organizations/${organization.name}`}
+                className="btn btn-light"
+              >
                 More Info...
               </a>
             </Card.Footer>

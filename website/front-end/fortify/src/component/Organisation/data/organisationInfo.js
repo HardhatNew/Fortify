@@ -89,7 +89,7 @@ const organizations = [
   },
   {
     id: '5',
-    name: 'Sunshine Hospital ',
+    name: 'SunshineHospital',
     address: 'Victoria 3149',
     contacts: {
       email: 'SunshineHospital@gmail.com',
