@@ -1,28 +1,28 @@
 // import topImage from "../../images/top-image.png";
-import smile from "../../images/smile.svg";
-import lavine from "../../images/lavine.png";
-import arrow from "../../images/arrow.svg";
-import phone from "../../images/phone.svg";
-import mail from "../../images/mail.svg";
-import primary from "../../images/primary.svg";
-import Qualification from "../../images/Qualification.svg";
-import contact from "../../images/contact.svg";
-import "./style.css";
+import smile from '../../images/smile.svg'
+import lavine from '../../images/lavine.png'
+import arrow from '../../images/arrow.svg'
+import phone from '../../images/phone.svg'
+import mail from '../../images/mail.svg'
+import primary from '../../images/primary.svg'
+import Qualification from '../../images/Qualification.svg'
+import contact from '../../images/contact.svg'
+import './style.css'
 
 export default function Profile() {
   return (
     <section
       style={{
-        margin: "auto",
-        maxWidth: "1280px",
+        margin: 'auto',
+        maxWidth: '1280px',
       }}
     >
       <div
         style={{
-          display: "flex",
-          alignItem: "flex-end",
-          justifyContent: "flex-end",
-          marginTop: "2rem",
+          display: 'flex',
+          alignItem: 'flex-end',
+          justifyContent: 'flex-end',
+          marginTop: '2rem',
         }}
       >
         <button className="btn-green">Complete your profile</button>
@@ -31,7 +31,7 @@ export default function Profile() {
       <section className="volunteer-container">
         <div className="volunteer-card">
           <article>
-            <img src={lavine} className="profile" />
+            <img src={lavine} className="profile" alt="name" />
           </article>
 
           <article>
@@ -96,5 +96,5 @@ export default function Profile() {
         </div>
       </section>
     </section>
-  );
+  )
 }
