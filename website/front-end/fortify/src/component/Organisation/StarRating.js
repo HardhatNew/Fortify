@@ -13,13 +13,17 @@ import './starStyle.css'
 const StarRating = (props) => {
   const [rating, setRating] = useState(props.ratingValue)
   const [hover, setHover] = useState(null)
+
+  let starNumber = props.starNumber != null ? props.starNumber : 5
+
   return (
     <>
-      {[...Array(5)].map((star, i) => {
+      {[...Array(starNumber)].map((star, i) => {
         const value = i + 1
         return (
           <label key={i}>
             <input
+              className="rating"
               type="radio"
               name="rating"
               value={value}

@@ -3,7 +3,54 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Volunteers main page start */
+/* ************************************************************************ */
+.volunteersCard{
+margin: 30px;
+}
+.volunteersHeaderCard{
+  display: flex;
+ justify-items: center;
+ background-color: rgba(212, 243, 180, 0.075) !important;
 
+
+}
+
+.volunteerName{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 3px 3px 0 30px;
+  margin: 3px 2px 2px 30px ;
+}
+.volunteerName > h6{
+  margin-top: 5px;
+  font-weight: bold;
+}
+.volunteerName > p{
+color: rgb(122, 121, 121);
+}
+.VCSkills{
+  display: flex;
+ 
+}
+.VCSkills > p {
+  margin-right: 10px;
+}
+.volunteersCC, .volunteersIR{
+  margin: -15px 2px  !important;
+  padding: 0px auto;
+ 
+}
+.volunteerCardBody{
+  margin-top: -10px;
+  margin-bottom: 5px;
+  border-top: 1px dashed rgb(24, 146, 13) !important ;
+}
+/* Volunteers main page end */
+/* ************************************************************************ */
 ul {
   list-style-type: none;
   padding: 0;

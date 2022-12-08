@@ -3,6 +3,6 @@
     transition: color 200ms;
     padding: 2px;
 }
-input[type="radio"]{
+.rating{
     display: none;
 }

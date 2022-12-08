@@ -8,7 +8,11 @@ const OrganisationsPage = () => {
     <Row xs={1} md={3} className="m-2 g-4">
       {organizations.map((organization) => (
         <Col key={organization.id}>
-          <Card border="success" className="bg-success">
+          <Card
+            border="success"
+            className="bg-success"
+            style={{ width: 'auto' }}
+          >
             <Card.Img
               className="cardImg"
               variant="top"

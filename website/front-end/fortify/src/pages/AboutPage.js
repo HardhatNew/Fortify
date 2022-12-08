@@ -1,6 +1,6 @@
-import Introduction from "../component/aboutus/Introduction"
+import Introduction from '../component/aboutUs/Introduction'
 
 const AboutPage = () => {
-  return <Introduction/>
+  return <Introduction />
 }
 export default AboutPage

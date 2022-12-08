@@ -8,6 +8,7 @@ import NotFoundPage from './pages/NotFoundPage'
 import React from 'react'
 import OrganisationProfile from './pages/OrganisationProfile'
 import Volunteers from './pages/VolunteersPage'
+import VolunteerProfile from './component/volunteers/volunteerProfile'
 import AboutPage from './pages/AboutPage'
 import OrganisationsPage from './pages/OrganisationsPage'
 import VolunteerNetwork from './pages/VolunteerNetwork'
@@ -23,9 +24,12 @@ function App() {
           <Routes>
             <Route path="/about" element={<AboutPage />} />
             <Route path="/" element={<Homepage />} />
-            <Route path="/volunteer" element={<Volunteers />} />
-            <Route path="/VNetwork" element={<VolunteerNetwork />} />
-
+            <Route path="/volunteers" element={<Volunteers />} />
+            {/* <Route path="/VNetwork" element={<VolunteerNetwork />} /> */}
+            <Route
+              path="/volunteers/:volunteerId"
+              element={<VolunteerProfile />}
+            />
             <Route path="/organizations" element={<OrganisationsPage />} />
             <Route
               path="/organizations/:organizationId"
