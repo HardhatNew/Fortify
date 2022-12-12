@@ -39,7 +39,7 @@ const SignUpPage = (props) => {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">SignUp</Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">Sign Up</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form>
@@ -84,7 +84,7 @@ const SignUpPage = (props) => {
             onChange={(event) => setSignAs(event.target.value)}
             value={signAS}
           >
-            <Form.Label>Sign As</Form.Label>
+            <Form.Label>Sign up as</Form.Label>
 
             <Form.Check
               id="company"
@@ -114,7 +114,7 @@ const SignUpPage = (props) => {
       </Modal.Body>
       <Modal.Footer>
         <Button variant="success" onClick={submitForm}>
-          SignUp
+          Sign Up
         </Button>
         <Button variant="danger" onClick={props.onHide}>
           Cancel

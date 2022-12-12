@@ -1,3 +1,4 @@
 .modalSignUp {
     background-color: rgba(0, 0, 0, 0.24);
+    z-index: 1000;
 }
