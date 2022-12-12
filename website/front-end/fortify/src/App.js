@@ -11,7 +11,7 @@ import Volunteers from './pages/VolunteersPage'
 import VolunteerProfile from './component/volunteers/volunteerProfile'
 import AboutPage from './pages/AboutPage'
 import OrganisationsPage from './pages/OrganisationsPage'
-// import VolunteerNetwork from './pages/VolunteerNetwork'
+//import VolunteerNetwork from './pages/Volunteernetwork'
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/" element={<Homepage />} />
             <Route path="/volunteers" element={<Volunteers />} />
-            {/* <Route path="/VNetwork" element={<VolunteerNetwork />} /> */}
+            {/*<Route path="/VNetwork" element={<VolunteerNetwork />} />*/}
             <Route
               path="/volunteers/:volunteerId"
               element={<VolunteerProfile />}
