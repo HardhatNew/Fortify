@@ -6,6 +6,7 @@ import React from 'react'
 import SignUpPage from './component/navbar/SignUp'
 import SignInPage from './component/navbar/SignIn'
 const NavBar = () => {
+  const [SignUp, setSignUp] = React.useState(false)
   const [modalShow, setModalShow] = React.useState(false)
   return (
     <>
@@ -34,24 +35,25 @@ const NavBar = () => {
             <Nav.Link
               onClick={() => setModalShow(true)}
               className="NBtn"
-              href="#link">
+              href="#link"
+            >
               Sign In
             </Nav.Link>
-         
+
             <Nav.Link
-              onClick={() => setModalShow(true)}
+              onClick={() => setSignUp(true)}
               className="NBtn"
-              href="#link">
+              href="#link"
+            >
               Sign Up
             </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
 
-      <SignUpPage show={modalShow} onHide={() => setModalShow(false)} />
+      <SignUpPage show={SignUp} onHide={() => setSignUp(false)} />
       <br />
       <SignInPage show={modalShow} onHide={() => setModalShow(false)} />
-     
     </>
   )
 }
