@@ -23,7 +23,7 @@ const organizations = [
   },
   {
     id: '2',
-    name: 'woolworth',
+    name: 'Woolworth',
     address: 'Victoria 3149',
     contacts: { email: 'woolworth@gmail.com', phoneNumber: '0412402016' },
     aboutUs:
@@ -89,7 +89,7 @@ const organizations = [
   },
   {
     id: '5',
-    name: 'SunshineHospital',
+    name: 'Sunshine Hospital',
     address: 'Victoria 3149',
     contacts: {
       email: 'SunshineHospital@gmail.com',
@@ -114,7 +114,7 @@ const organizations = [
   },
   {
     id: '6',
-    name: 'Alkassab dental',
+    name: 'Alkassab Dental',
     address: 'Victoria 3149',
     contacts: { email: 'Alkassab_dental@gmail.com', phoneNumber: '0477802016' },
     aboutUs:
