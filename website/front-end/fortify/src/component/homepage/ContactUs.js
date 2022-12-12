@@ -1,11 +1,5 @@
-// author
-//date
-
-/* 
-More details goes here....
-what the from about 
-what supposed to do
-*/
+// author:- Harry Singh
+//date:- 02/12/2022
 
 const ContactUs = () => {
   return (

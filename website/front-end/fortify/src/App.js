@@ -11,7 +11,7 @@ import Volunteers from './pages/VolunteersPage'
 import VolunteerProfile from './component/volunteers/volunteerProfile'
 import AboutPage from './pages/AboutPage'
 import OrganisationsPage from './pages/OrganisationsPage'
-import VolunteerNetwork from './pages/VolunteerNetwork'
+// import VolunteerNetwork from './pages/VolunteerNetwork'
 
 function App() {
   return (

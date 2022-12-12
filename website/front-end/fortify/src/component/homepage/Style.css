@@ -490,6 +490,7 @@ margin: 0px;
     padding: 14px;
     padding-top: 4px;
     box-shadow: 0px 0px 3px 0px;
+    width: 50%;
   }
   .emailInput{
      height: 44px;
@@ -561,3 +562,91 @@ font-weight:bolder;
 /* End footer Section  */
 /* **************************************************************** */
 
+/* about section */
+.about{
+  height: 875px;
+  width: 100%;
+  
+}
+.aboutIcons{
+  width: 100%;
+  height: 289px;
+background-color: white;
+  text-align: center;
+  margin-top: 108px;
+  
+}
+.firstAboutIcon{
+  float: left;
+  height: 192px;
+  width: 247px;
+  margin-left: 170px;
+  background-color: #079107c2; 
+  border-radius: 10px;
+}
+.firstAboutIcon:first-child{
+  font-size: 122px;
+  color: black;
+
+}
+.secondAboutIcon{
+  float: left;
+  height: 192px;
+  width: 247px;
+  margin-left: 245px;
+  background-color: #079107c2;
+  border-radius: 10px;
+}
+.handshake{
+  font-size: 122px;
+  color: black;
+  margin-top: 21px;
+}
+.thirdAboutIcon{
+  float: right;
+  height: 192px;
+  width: 247px;
+  background-color: #079107c2;
+  border-radius: 10px;
+  margin-right: 230px;
+}
+
+.textAboutIcon{
+  font-size: 21px;
+    margin-top: 18px;
+}
+.aboutTextSecondIcon{
+  margin-top: 26px;
+    font-size: 18px;
+}
+.aboutTextThirdIcon{
+  margin-top: 26px;
+  font-size: 18px;
+}
+.aboutText{
+  width: 100%;
+  height: 530px;
+  background-color: #383b50;
+  text-align: center;
+}
+.aboutTextH{
+  color: white;
+    font-size: 40px;
+    /* margin-top: 6px; */
+    padding-top: 61px;
+}
+.aboutLongText{
+  color: #079107c2;
+  text-align: left;
+  margin-left: 266px;
+  margin-top: 40px;
+  font-size: 26px;
+}
+.firstImage{
+  margin-top: -45px;
+  height: 155px;
+}
+.secondImage{
+  height: 179px;
+}
+/* end of the about section */
