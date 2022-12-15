@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row'
 import organizations from '../component/Organisation/data/organisationInfo'
 import StarRating from '../component/Organisation/StarRating'
 const OrganisationsPage = () => {
+  console.log(organizations.length)
   return (
     <Row xs={1} md={3} className="m-2 g-4">
       {organizations.map((organization) => (

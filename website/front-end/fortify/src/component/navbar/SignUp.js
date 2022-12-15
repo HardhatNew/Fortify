@@ -6,7 +6,7 @@ More details goes here....
 what the from about 
 what supposed to do
 */
-
+import { AiOutlineArrowRight } from 'react-icons/ai'
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
@@ -19,6 +19,7 @@ const SignUpPage = (props) => {
   const [fullName, setFullName] = useState('')
   const [comments, setComments] = useState('')
   const [signAS, setSignAs] = useState('')
+  const [checkPassword] = useState('')
   const submitForm = () => {
     let setData = {}
     setData.fullName = fullName
@@ -29,7 +30,12 @@ const SignUpPage = (props) => {
     console.log('info ', setData)
     props.onHide()
   }
-
+  function setCheckPassword(value) {
+    let message = document.querySelector('#errorMassage')
+    if (password !== value) {
+      message.innerHTML = 'Your passwords not matching'
+    } else message.innerHTML = ' '
+  }
   return (
     <Modal
       className="modalSignUp"
@@ -43,17 +49,6 @@ const SignUpPage = (props) => {
       </Modal.Header>
       <Modal.Body>
         <Form>
-          <Form.Group className="mb-3" controlId="FullName">
-            <Form.Label>Full Name</Form.Label>
-            <Form.Control
-              name="fullName"
-              type="text"
-              placeholder="Full Name"
-              autoFocus
-              onChange={(event) => setFullName(event.target.value)}
-              value={fullName}
-            />
-          </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Email address</Form.Label>
             <Form.Control
@@ -76,7 +71,12 @@ const SignUpPage = (props) => {
           <Form.Group className="mb-3" controlId="confirmPassword">
             <Form.Label>Confirm Password</Form.Label>
 
-            <Form.Control type="password" placeholder="Confirm Password" />
+            <Form.Control
+              type="password"
+              placeholder="Confirm Password"
+              onChange={(event) => setCheckPassword(event.target.value)}
+            />
+            <p id="errorMassage"></p>
           </Form.Group>
           <Form.Group
             className="mb-3"
@@ -101,20 +101,11 @@ const SignUpPage = (props) => {
               value="volunteer"
             />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Comments</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={3}
-              onChange={(event) => setComments(event.target.value)}
-              value={comments}
-            />
-          </Form.Group>
         </Form>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="success" onClick={submitForm}>
-          Sign Up
+          Next <AiOutlineArrowRight />
         </Button>
         <Button variant="danger" onClick={props.onHide}>
           Cancel
