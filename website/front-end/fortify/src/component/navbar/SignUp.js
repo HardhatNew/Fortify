@@ -16,22 +16,36 @@ import { useState } from 'react'
 const SignUpPage = (props) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [fullName, setFullName] = useState('')
-  const [comments, setComments] = useState('')
   const [signAS, setSignAs] = useState('')
-  const [checkPassword] = useState('')
+
   const submitForm = () => {
+    const errorMessage = document.querySelector('#errors')
+
     let setData = {}
-    setData.fullName = fullName
+    if (!email) {
+      errorMessage.innerHTML = 'You must enter your Email'
+      return
+    }
+    if (!password) {
+      errorMessage.innerHTML = 'You must enter your Password'
+      return
+    }
+
+    if (!signAS) {
+      errorMessage.innerHTML =
+        'You must choose sign as " volunteer/ organization"'
+      return
+    }
+
     setData.password = password
-    setData.comments = comments
+
     setData.email = email
     setData.signAS = signAS
     console.log('info ', setData)
     props.onHide()
   }
   function setCheckPassword(value) {
-    let message = document.querySelector('#errorMassage')
+    const message = document.querySelector('#errorMassage')
     if (password !== value) {
       message.innerHTML = 'Your passwords not matching'
     } else message.innerHTML = ' '
@@ -88,7 +102,7 @@ const SignUpPage = (props) => {
 
             <Form.Check
               id="company"
-              label="Company"
+              label="Organization"
               name="signAs"
               type="radio"
               value="company"
@@ -103,13 +117,16 @@ const SignUpPage = (props) => {
           </Form.Group>
         </Form>
       </Modal.Body>
-      <Modal.Footer>
-        <Button variant="success" onClick={submitForm}>
-          Next <AiOutlineArrowRight />
-        </Button>
-        <Button variant="danger" onClick={props.onHide}>
-          Cancel
-        </Button>
+      <Modal.Footer className="footerSingUp">
+        <p id="errors"></p>
+        <div>
+          <Button className="btnNext" variant="success" onClick={submitForm}>
+            Next <AiOutlineArrowRight />
+          </Button>
+          <Button variant="danger" onClick={props.onHide}>
+            Cancel
+          </Button>
+        </div>
       </Modal.Footer>
     </Modal>
   )
