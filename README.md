@@ -11,4 +11,3 @@ The Hardhat Enterprises Fortify project is a website platform that connects secu
 
 MongoDB, Express, React, Node
 MERN stands for MongoDB, Express, React, Node, after the four key technologies that make up the stack. MongoDB — document database. Express(.js) — Node.js web framework. React(.js) — a client-side JavaScript framework. Node(.js) — the premier JavaScript web server. 
-
